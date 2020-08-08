@@ -49,40 +49,5 @@ class Solution {
         }
         return res;
     }
-
-
-
-    //error
-//    public String longestPalindrome(String s) {
-//        int len = s.length();
-//        if (len <= 1) {
-//            return s;
-//        }
-//        boolean[][] dp = new boolean[len][len];
-//        String res = "";
-//        for (int i = 0; i < len; i++) {
-//            for (int j = 0; j < len; j++) {   //注意状态方程转移方向，应该有字符串较短到较长的方向转移
-//                if (i > j) {
-//                    continue;
-//                }
-//                if (j - i == 0) {
-//                    dp[i][j] = true;
-//                } else if (j - i == 1) {
-//                    dp[i][j] = s.charAt(i) == s.charAt(j);
-//                } else {
-//                    dp[i][j] = dp[i + 1][j - 1] && (s.charAt(i) == s.charAt(j));
-//                }
-//                if (dp[i][j] && res.length() < j - i + 1) {
-//                    res = s.substring(i, j + 1);
-//                }
-//            }
-//        }
-//        return res;
-//    }
 }
 //leetcode submit region end(Prohibit modification and deletion)
-
-
-/*
-T1-8.4, > 30min
- */
